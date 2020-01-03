@@ -4,6 +4,7 @@ fun <T> Collection<T>.jointToString(separator : String = ", ", prefix: String = 
     val result = StringBuilder(prefix)
 
     for((index, element) in this.withIndex()){
+        println("$index: $element")
         if(index > 0) result.append(separator)
         result.append(element)
     }
