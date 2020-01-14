@@ -25,5 +25,8 @@ fun main(){
     val getAge ={p: Person -> p.age}
     people.maxBy(getAge)
 
+    // member reference
+    people.maxBy(Person::age)
+
     println(sum2(1,2))
 }
