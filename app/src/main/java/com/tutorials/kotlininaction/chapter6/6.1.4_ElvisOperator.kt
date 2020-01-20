@@ -19,7 +19,8 @@ fun Person.countryName2()=company?.address?.country ?: "Unknown"
  * using throw together with Elvis operator
  * */
 fun printShippingLable(person: Person){
-    val address = person.company?.address?: throw IllegalArgumentException("No Address")
+//    val address = person.company?.address?: throw IllegalArgumentException("No Address")
+    val address = person.company?.address?: fail("No address")
     with(address){
         println(streetAddress)
         println("$zipCode $city, $country")
