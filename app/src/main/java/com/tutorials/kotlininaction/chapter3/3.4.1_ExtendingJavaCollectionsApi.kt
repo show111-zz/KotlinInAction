@@ -11,6 +11,6 @@ fun main() {
     println(strings.last())
 
     val numbers : Collection<Int> = setOf(1, 14,2)
-    println(numbers.max())
+    println(numbers.maxOrNull())
 
 }

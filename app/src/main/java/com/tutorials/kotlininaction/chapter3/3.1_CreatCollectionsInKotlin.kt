@@ -31,7 +31,7 @@ fun main(){
     println(map.javaClass) // HashMap
 
     println(strings.last())
-    println(numbers.max())
+    println(numbers.maxOrNull())
 
     println(strings) // invoke toString()
 

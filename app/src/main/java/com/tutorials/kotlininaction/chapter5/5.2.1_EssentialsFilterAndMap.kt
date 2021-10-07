@@ -26,9 +26,9 @@ fun main(){
     println(people.filter { it.age > 30 }.map(Person5::name))
 
     // this code repeat the process of finding the maximum age. means 100 people performed 100 times!
-    people.filter { it.age == people.maxBy(Person5::age)?.age }
+    people.filter { it.age == people.maxByOrNull(Person5::age)?.age }
     // this code improved on that and calculates the maximum age only once!
-    val maxAge = people.maxBy(Person5::age)?.age
+    val maxAge = people.maxByOrNull(Person5::age)?.age
     people.filter { it.age == maxAge }
 
     // apply the filter and transformation functions to maps

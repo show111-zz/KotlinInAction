@@ -22,7 +22,7 @@ fun main(){
     findTheOldest(people)
 
     //using a lambda
-    println(people.maxBy { it.age })
+    println(people.maxByOrNull { it.age })
 
-    people.maxBy { p:Person -> p.age }
+    people.maxByOrNull { p:Person -> p.age }
 }

@@ -20,7 +20,7 @@ fun main(){
     run(::salute)
 
     val people = listOf(Person("alice",12),Person("bob",23))
-    people.maxBy(getAge)
+    people.maxByOrNull(getAge)
 
 //    val action = { person: Person, message: String ->
 //        sendEmail(person, message)

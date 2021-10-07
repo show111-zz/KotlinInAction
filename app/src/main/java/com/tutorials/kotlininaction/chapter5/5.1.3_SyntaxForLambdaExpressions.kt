@@ -23,10 +23,10 @@ fun main(){
     people.joinToString(" ") { p: Person -> p.name }
 
     val getAge ={p: Person -> p.age}
-    people.maxBy(getAge)
+    people.maxByOrNull(getAge)
 
     // member reference
-    people.maxBy(Person::age)
+    people.maxByOrNull(Person::age)
 
     println(sum2(1,2))
 }
